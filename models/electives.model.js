@@ -2,24 +2,17 @@ const mongoose = require('mongoose');
 const { Schema } = require('mongoose');
 const { ObjectId } = require('mongoose').Schema;
 
-const majorSchema = new Schema(
+const electivesSchema = new Schema(
     {
-        name: {
-            type = String,
-            required =true
-        },
         department: {
             type = String,
             required = true
         },
-        core: [
+        electives: [
             {
-                core_name:{
+                name: {
                     type = String,
                     required = true
-                },
-                core_department:{
-                    type = String
                 }
             }
         ]
@@ -29,4 +22,4 @@ const majorSchema = new Schema(
     }
 )
 
-module.exports = mongoose.model('Major', majorSchema)
+module.exports = mongoose.model('Electives', electivesSchema)

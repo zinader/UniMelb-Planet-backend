@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = require('mongoose');
 const { ObjectId } = require('mongoose').Schema;
 
-const majorSchema = new Schema(
+const breadthSchema = new Schema(
     {
         name: {
             type = String,
@@ -12,21 +12,10 @@ const majorSchema = new Schema(
             type = String,
             required = true
         },
-        core: [
-            {
-                core_name:{
-                    type = String,
-                    required = true
-                },
-                core_department:{
-                    type = String
-                }
-            }
-        ]
     },
     {
         timestamps: true
     }
 )
 
-module.exports = mongoose.model('Major', majorSchema)
+module.exports = mongoose.model('Breadth', breadthSchema)
