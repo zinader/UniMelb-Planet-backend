@@ -21,6 +21,14 @@ connection.once('open', ()=>{
     console.log("MongoDB connection successfullt estabilished")
 })
 
+const majorRouter = require('./routes/major');
+const breadthRouter = require('./routes/breadth');
+const electivesRouter = require('./routes/electives');
+
+app.use('/Majors', majorRouter);
+app.use('/Breadths', breadthRouter);
+app.use('/Electives', electivesRouter);
+
 app.listen(port, ()=>{
     console.log(`Server is running on Port : ${port}`)
 })

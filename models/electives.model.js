@@ -5,14 +5,14 @@ const { ObjectId } = require('mongoose').Schema;
 const electivesSchema = new Schema(
     {
         department: {
-            type = String,
-            required = true
+            type : String,
+            required : true
         },
         electives: [
             {
                 name: {
-                    type = String,
-                    required = true
+                    type : String,
+                    required : true
                 }
             }
         ]
