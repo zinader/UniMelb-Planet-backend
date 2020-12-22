@@ -13,7 +13,7 @@ router.route('/add').post((req, res) => {
       {
           name: req.body.name,
           department: req.body.department,
-          core: req.body.core
+          "core": req.body.core
       }
   );
 

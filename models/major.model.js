@@ -14,11 +14,11 @@ const majorSchema = new Schema(
         },
         core: [
             {
-                core_name:{
+                name:{
                     type : String,
                     required : true
                 },
-                core_department:{
+                department:{
                     type : String
                 }
             }

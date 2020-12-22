@@ -16,7 +16,7 @@ router.route('/add').post((req, res) => {
   );
 
   newElective.save()
-    .then(() => res.json('Breadth added!'))
+    .then(() => res.json('Electives added added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
